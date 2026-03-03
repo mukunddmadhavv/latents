@@ -12,7 +12,6 @@ import eight from '../assets/8.png';
 import nine from '../assets/9.png';
 import ten from '../assets/10.png';
 import dollarImg from '../assets/dollar.png';
-import nikhilImg from '../assets/nikhil.png';
 
 export default function LandingPage() {
     const [email, setEmail] = useState('');
