@@ -24,7 +24,7 @@ export default function LandingPage() {
     };
 
     return (
-        <div className="relative w-full min-h-screen bg-[#FDFDFD] overflow-hidden font-sans flex flex-col items-center pt-24 pb-32">
+        <div className="relative w-full min-h-screen bg-[#FDFDFD] overflow-hidden font-sans flex flex-col items-center justify-center">
 
             {/* ====== ACETERNITY DOT BACKGROUND ====== */}
             <div
@@ -38,18 +38,27 @@ export default function LandingPage() {
             <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
             {/* Central Content */}
-            <div className="relative z-10 flex flex-col items-center text-center mt-8 w-full max-w-4xl mx-auto">
+            <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl mx-auto">
                 <motion.h1
                     initial={{ opacity: 0, scale: 0.95, y: 10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-[52px] md:text-[52px] lg:text-[62px] font-bold tracking-tighter text-black leading-[1.05] mt-24 mb-8"
+                    className="text-[52px] md:text-[52px] lg:text-[62px] font-bold tracking-tighter text-black leading-[1.05] mb-4"
                 >
-                    All <span className="text-gray-300 font-medium tracking-tight">[Hidden]</span> Opportunities<br />
-                    One Place
+                    All <span className="text-gray-300 font-medium tracking-tight">[Hidden]</span> Opportunities.<br />
+                    One Place.
                 </motion.h1>
 
-
+                {/* Tagline */}
+                <motion.p
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+                    className="text-[#86868b] text-[17px] font-medium tracking-tight mb-8"
+                >
+                    Stop consuming,{' '}
+                    <span className="text-[#1d1d1f] font-semibold">Start Acting.</span>
+                </motion.p>
 
                 <motion.form
                     initial={{ opacity: 0, y: 10 }}
